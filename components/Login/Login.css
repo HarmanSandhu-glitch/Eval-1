@@ -1,0 +1,71 @@
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(165, 165, 165, 0.231);
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 2rem;
+}
+label {
+  font-size: 1.6rem;
+}
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  padding: 16px 96px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  border: 2px solid black;
+  transition-duration: 0.3s;
+}
+button:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.textSignIn {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  justify-content: center;
+  width: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/colorful-pattern-with-word-love-it_900958-6870.jpg");
+  background-size: 100% 100%;
+}
+
+.textSignIn > div {
+  display: flex;
+  align-items: center;
+  font-size: 84%;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  backdrop-filter: blur(36px);
+  padding: 2vw 0px;
+}
+.signIn {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+}
+@media screen and(max-width:800px) {
+}
