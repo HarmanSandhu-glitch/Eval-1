@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./search.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./searchCard.css" />
   </head>
   <body>
-    <div>
+    <div style="margin: 4rem 0">
       <div class="container1">
         <img src="../productPage/Images/lineBreaker.png" alt="" />
         <div class="title">
@@ -42,13 +43,24 @@
               <option value="">Price : Descending</option>
             </select>
           </div>
-          <div class="searchResultCards">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
+          <div class="searchResultCards"></div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    let searchResultCards = document.querySelector(".searchResultCards");
+    for (let i = 0; i < 10; i++) {
+      const searchCard = document.createElement("div");
+      searchCard.classList.add("searchCard");
+      searchCard.innerHTML = `<img
+        src="https://cdn.shopify.com/s/files/1/0549/9555/0392/products/MTLK00022MUSTARD_2_aafe0e8e-5fbe-413d-b391-c0b4b03d8a81_540x.jpg?v=1698748347"
+        alt=""
+      />
+      <div class="cardTitle">Lorem ipsum dolor sit asdf</div>
+      <div class="cardPrice">$7.99</div>
+      <button>Add To Cart</button>`;
+      searchResultCards.appendChild(searchCard);
+    }
+  </script>
 </html>
