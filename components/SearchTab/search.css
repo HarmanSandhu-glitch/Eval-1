@@ -11,7 +11,7 @@
 }
 .container2 {
   display: grid;
-  grid-template-columns: 0.24fr 0.76fr;
+  grid-template-columns: 0.20fr 0.80fr;
   margin: auto;
   width: 90%;
   column-gap: 2rem;
@@ -26,8 +26,12 @@
     li {
       list-style: none;
       font-size: 1.2rem;
-      font-weight: 100;
+      font-weight: 300;
       cursor: pointer;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
