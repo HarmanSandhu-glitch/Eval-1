@@ -28,12 +28,100 @@
       <div class="container2">
         <div class="filters">
           <ul>
-            <li>GENDER <i class="fa-solid fa-plus"></i></li>
-            <li>PRODUCT TYPE <i class="fa-solid fa-plus"></i></li>
+            <li  class="filterDiv">
+              <div>
+                GENDER
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="filterDivInfo">
+                <ul>
+                  <li><input type="checkbox" />Male</li>
+                  <li><input type="checkbox" />Female</li>
+                </ul>
+              </div>
+            </li>
+            <li class="filterDiv">
+              <div>
+                PRICE
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="filterDivInfo">
+                <ul>
+                  <li><input type="checkbox" />Under 1000</li>
+                  <li><input type="checkbox" />Under 2500</li>
+                  <li><input type="checkbox" />Above 2500</li>
+                </ul>
+              </div>
+            </li>
+            <li  class="filterDiv">
+              <div>
+                DISCOUNT
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="filterDivInfo">
+                <ul>
+                  <li><input type="checkbox" />Upto 30% off</li>
+                  <li><input type="checkbox" />Upto 50% off</li>
+                </ul>
+              </div>
+            </li>
+            <li  class="filterDiv">
+              <div>
+                GENDER
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="filterDivInfo">
+                <ul>
+                  <li style="display: flex; gap: 4px">
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background-color: rebeccapurple;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        border: 1px solid black;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background-color: white;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        border: 1px solid black;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background-color: burlywood;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        border: 1px solid black;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 32px;
+                        height: 32px;
+                        background-color: black;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        border: 1px solid black;
+                      "
+                    ></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li>PRODUCT TYPE <i class="fa-solid fa-plus"></i></li>
             <li>PRICE <i class="fa-solid fa-plus"></i></li>
             <li>SIZE <i class="fa-solid fa-plus"></i></li>
             <li>DISCOUNT <i class="fa-solid fa-plus"></i></li>
-            <li>COLOR <i class="fa-solid fa-plus"></i></li>
+            <li>COLOR <i class="fa-solid fa-plus"></i></li> -->
           </ul>
         </div>
         <div class="searchResults">
@@ -54,7 +142,7 @@
   </body>
   <script>
     let searchResultCards = document.querySelector(".searchResultCards");
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 12; i++) {
       const searchCard = document.createElement("div");
       searchCard.classList.add("searchCard");
       searchCard.innerHTML = `<img
@@ -66,5 +154,16 @@
       <button>Add To Cart</button>`;
       searchResultCards.appendChild(searchCard);
     }
+
+    const filterDiv = document.querySelectorAll(
+      ".filterDiv > div:nth-child(1)"
+    );
+    const filterDivInfo = document.querySelectorAll(".filterDivInfo >ul");
+    filterDiv.forEach((div, index) => {
+      div.addEventListener("click", () => {
+        filterDivInfo[index].style.display =
+          filterDivInfo[index].style.display === "none" ? "flex" : "none";
+      });
+    });
   </script>
 </html>

@@ -17,48 +17,261 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div>
-      <div class="textSignIn" style="border: 2px solid black">
-        <div>Sign In / Sign Up</div>
+    <div class="container1">
+      <img
+        src="./images/image1.avif"
+        alt=""
+        style="width: 100%; border-radius: 1rem"
+      />
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          justify-content: center;
+        "
+        ;
+      >
+        <div style="display: flex; gap: 2rem; flex-direction: column">
+          <div style="display: flex; flex-direction: column">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" />
+          </div>
+          <div style="display: flex; flex-direction: column">
+            <label for="Password">Password</label>
+            <input type="password" name="Email" />
+          </div>
+        </div>
+        <div class="signInButtonContainer">
+          <button>Sign In</button>
+          <a href="">Forgot Password?</a>
+        </div>
+        <div
+          style="display: flex; width: 100%; justify-content: center; gap: 2rem"
+        >
+          <button style="width: 56px; height: 56px; padding: 0">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button style="width: 56px; height: 56px; padding: 0">
+            <i class="fab fa-facebook"></i>
+          </button>
+          <button style="width: 56px; height: 56px; padding: 0">
+            <i class="fab fa-google"></i>
+          </button>
+          <button style="width: 56px; height: 56px; padding: 0">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
       </div>
-      <div style="width: 100%">
+    </div>
+    <div class="cardContainer">
+      <!-- card -->
+      <div
+        style="
+          width: 100%;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.372);
+          border-radius: 1rem;
+          overflow: hidden;
+          padding: 0;
+          height: fit-content;
+        "
+      >
         <div
           style="
-            width: 80%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 8vh;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border-bottom: 1px solid black; */
+            padding-bottom: 1rem;
+          "
+        >
+          <h1>Print</h1>
+          <img
+            src="images/image.png"
+            alt=""
+            style="width: 80%; border-radius: 1rem"
+          />
+        </div>
+        <div>
+          <ul
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              font-weight: 300;
+            "
+          >
+            <li>Subscribe to other Magazine with Vogue</li>
+            <li>Great Value deals</li>
+            <li>Yearly Subscription offers</li>
+            <li>Doorstep Delivery</li>
+            <li>Yearly Subscription offers</li>
+          </ul>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
           "
         >
           <div
-            class="signIn"
-            style="display: flex; align-items: center; justify-content: center"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
           >
-            <label for="email" style="width: 100%">Email Address</label>
-            <input type="email" name="email" id="" />
-            <label for="password" style="width: 100%">Password</label>
-            <input type="password" name="password" id="" />
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-              "
-            >
-              <button>Sign In</button>
-              <a href="" style="font-size: 2rem; color: black"
-                >Forgot Password ?
-              </a>
-            </div>
+            <p style="font-size: 2rem">&#8377; 2999 &nbsp;</p>
           </div>
+          <div>
+            <button style="border-radius: 16px 0 0 0; margin: 0">SELECT</button>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          width: 100%;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.372);
+          border-radius: 1rem;
+          overflow: hidden;
+          padding: 0;
+          height: fit-content;
+        "
+      >
+        <div
+          style="
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border-bottom: 1px solid black; */
+            padding-bottom: 1rem;
+          "
+        >
+          <h1>Digital</h1>
+          <img
+            src="images/image.png"
+            alt=""
+            style="width: 80%; border-radius: 1rem"
+          />
+        </div>
+        <div>
+          <ul
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              font-weight: 300;
+            "
+          >
+            <li>Instant access to digital issues</li>
+            <li>Read on any device and anytime</li>
+            <li>Exclusive online content</li>
+            <li>Interactive features</li>
+            <li>Eco-friendly option</li>
+          </ul>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+          "
+        >
           <div
-            class="signUp"
-            style="display: flex; align-items: center; justify-content: center"
-          ></div>
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <p style="font-size: 2rem">&#8377; 2999 &nbsp;</p>
+          </div>
+          <div>
+            <button style="border-radius: 16px 0 0 0; margin: 0">SELECT</button>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          width: 100%;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.372);
+          border-radius: 1rem;
+          overflow: hidden;
+          padding: 0;
+          height: fit-content;
+        "
+      >
+        <div
+          style="
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border-bottom: 1px solid black; */
+            padding-bottom: 1rem;
+          "
+        >
+          <h1>BEST SELLERS</h1>
+          <img
+            src="images/image.png"
+            alt=""
+            style="width: 80%; border-radius: 1rem"
+          />
+        </div>
+        <div>
+          <ul
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              font-weight: 300;
+            "
+          >
+            <li>Subscribe to other Magazine with Vogue</li>
+            <li>Great Value deals</li>
+            <li>Yearly Subscription offers</li>
+            <li>Doorstep Delivery</li>
+            <li>Yearly Subscription offers</li>
+          </ul>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <p style="font-size: 2rem">&#8377; 2999 &nbsp;</p>
+          </div>
+          <div>
+            <button style="border-radius: 16px 0 0 0; margin: 0">SELECT</button>
+          </div>
         </div>
       </div>
     </div>
