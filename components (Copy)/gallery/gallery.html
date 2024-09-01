@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow Example</title>
+    <link rel="stylesheet" href="../card/card.css" />
+    <!-- <style>
+      .container {
+        border: 2px solid black;
+        width: 350px;
+        height: 250px;
+        display: flex;
+        overflow: visible; /* Ensure container allows overflow */
+        position: relative; /* Ensure container respects overflow */
+      }
+      .overflow-text::-webkit-scrollbar {
+        display: none;
+      }
+      .overflow-text {
+        width: 400px; /* Wider than container */
+        height: 75px;
+        text-align: justify;
+        white-space: nowrap;
+        overflow-x: scroll; /* Allow text to overflow */
+      }
+    </style> -->
+    <style>
+      .gallery {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        overflow-x: scroll;
+        border: 2px solid black;
+        gap: 16px;
+        padding: 16px;
+        height: fit-content;
+      }
+      .gallery::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://cdn.thewirecutter.com/wp-content/media/2024/05/running-shoes-2048px-9718.jpg"
+            class="productImage"
+            alt=""
+          />
+        </div>
+        <div class="productInfo">
+          <h2>Title</h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis repellat, aut inventore deserunt quam atque aperiam
+            dolorem
+          </h3>
+        </div>
+        <div class="priceAndCart">
+          <h1>$xx</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const overflowContainer = document.querySelector(".gallery");
+    overflowContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      overflowContainer.style.scrollBehaviour = "smooth";
+      overflowContainer.scrollLeft += evt.deltaY;
+    });
+  </script>
+</html>

@@ -1,0 +1,122 @@
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(165, 165, 165, 0.231);
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+label {
+  font-size: 1.6rem;
+}
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+p {
+  margin: 0;
+}
+button {
+  padding: 16px 96px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  transition-duration: 0.3s;
+}
+button:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.textSignIn {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  justify-content: center;
+  width: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/colorful-pattern-with-word-love-it_900958-6870.jpg");
+  background-size: 100% 100%;
+}
+
+.textSignIn > div {
+  display: flex;
+  align-items: center;
+  font-size: 84%;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  backdrop-filter: blur(36px);
+  padding: 2vw 0px;
+}
+.signIn {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+}
+
+.signInButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+  }
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 0.6fr 0.3fr;
+  justify-content: space-evenly;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 24%);
+  justify-content: center;
+  gap: 2%;
+  margin: 5rem 0;
+}
+
+@media screen and (max-width: 384px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+@media screen and(max-width:800px) {
+}
+@media screen and (max-width: 1048px) {
+  .signInButtonContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container1 {
+    grid-template-columns: 1fr;
+    padding: 4rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1512px) {
+  .signInButtonContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
