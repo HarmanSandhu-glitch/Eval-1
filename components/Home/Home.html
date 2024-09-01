@@ -32,11 +32,6 @@
           </p>
           <p>Prasad, Delhi</p>
           <button>Shop The Collection!</button>
-          <img
-            src="./media/patternBackbround.png"
-            alt=""
-            class="floralPattern"
-          />
         </div>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -82,22 +77,17 @@
       swiperSlide.forEach((slide) => {
         const div = document.createElement("div");
         div.setAttribute("class", "productCard");
-        div.setAttribute("style", " display:flex;flex-direction:row;gap:6rem;");
-
         div.innerHTML = `
         <img
           src="https://cdn.shopify.com/s/files/1/0549/9555/0392/files/MTLK00080WHITE_1_360x.jpg?v=1715411825"
           alt=""
-          style="width:50%;"
         />
-        <div class="productCard-info" style="display: flex;
-        justify-content: center;
-        align-items: start;scale:1.5;">
-          <h5 style="margin: 0">Heritage Threads</h5>
+        <div class="productCard-info">
+          <h5>Heritage Threads</h5>
           <h1>Regular Fit solid kurta</h1>
           <h2>
-            <span style="font-size: 1rem; margin-right: 4 px">from</span>
-            <span style="color: #c33d3d; font-size: 116%">$74.89</span>
+            <span>from</span>
+            <span >$74.89</span>
           </h2>
           <button>Add To Cart</button>
         </div>`;

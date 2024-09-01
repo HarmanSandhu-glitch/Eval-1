@@ -6,10 +6,13 @@
 }
 nav {
   border-bottom: 1px solid black;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   z-index: 50;
   background-color: white;
+  
 }
 .container {
   display: flex;

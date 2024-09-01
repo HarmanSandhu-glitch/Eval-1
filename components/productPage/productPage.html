@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="productPageCss.css" />
     <link rel="stylesheet" href="../card/card.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../Header/Header.css" />
+    <link rel="stylesheet" href="../Footer/Footer.css" />
+    <script
+      src="https://kit.fontawesome.com/1b2855684f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
@@ -14,6 +21,36 @@
     />
   </head>
   <body style="overflow-x: hidden">
+    <!-- NavBar -->
+
+    <div>
+      <nav>
+        <div class="container">
+          <div class="left">
+            <ul>
+              <li class="cultureShow"><i class="fa-solid fa-globe"></i></li>
+              <li class="eventShow">
+                <i class="fa-solid fa-calendar-days"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <img src="../productPage/Images/Logo.png" alt="" />
+          </div>
+          <div class="right">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-regular fa-user"></i></button>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </nav>
+      <div class="shopByCultureContainer">
+        <div class="shopByCulture commonNav"></div>
+        <div class="shopByEvent commonNav"></div>
+      </div>
+    </div>
+
+    <!-- Body -->
     <div class="main">
       <div class="mainImageContainer">
         <div class="sideImageContainer">
@@ -49,9 +86,9 @@
           />
         </div>
       </div>
-      <div id="infoContainer">
-        <div class="heading">
-          <h2 style="font-size: 2.4rem">Regular Fit Solid Kurta</h2>
+      <div id="infoContainer" style="justify-content: center">
+        <div class="heading" >
+          <h2 style="font-size: 2.4rem;line-height: 2.6rem;">Regular Fit Solid Kurta</h2>
           <h3>$73.96</h3>
           <h6>MRP Inc. of all taxes</h6>
         </div>
@@ -93,9 +130,6 @@
             <button class="largeButton">Add To Cart</button>
             <button class="largeButton">Buy it Now</button>
           </div>
-        </div>
-        <div>
-          <button>Show more</button>
         </div>
       </div>
     </div>
@@ -237,5 +271,67 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div>
+        <div class="footerSection1">
+          <div class="logoSection">
+            <img
+              src="../productPage/Images/Logo.png"
+              alt=""
+              class="logoImage"
+            />
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <span>location</span>
+              <span>+91 892834712397</span>
+              <span>shop@heritagethreads.in</span>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <h2>Information</h2>
+              <li>Search</li>
+              <li>About</li>
+              <li>Terms & Services</li>
+              <li>Privacy Policy</li>
+              <li>Refund Policy</li>
+            </ul>
+            <ul>
+              <h2>Top Categories</h2>
+              <li>Punjabi essence</li>
+              <li>Gujarti</li>
+              <li>Bhojpuri</li>
+              <li>Modernized Traditional</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            /* background-color: red; */
+          "
+        >
+          <div class="footerSection2">
+            <span
+              style="
+                text-transform: uppercase;
+                background-color: black;
+                border-radius: 25px;
+                color: white;
+                padding: 8px 12px;
+              "
+              >@2024 Heritage Theads All right Reserved</span
+            >
+            <span class="socialHandles">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="../Header/Header.js"></script>
 </html>

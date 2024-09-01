@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="../../card/card.css" />
+    <link rel="stylesheet" href="../../Footer/Footer.css" />
+    <link rel="stylesheet" href="../../Header/Header.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1b2855684f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="padding-top: 102px; overflow-x: hidden">
+    <!-- navbar -->
+    <div>
+      <nav>
+        <div class="container">
+          <div class="left">
+            <ul>
+              <li class="cultureShow"><i class="fa-solid fa-globe"></i></li>
+              <li class="eventShow">
+                <i class="fa-solid fa-calendar-days"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <img src="../../productPage/Images/Logo.png" alt="" />
+          </div>
+          <div class="right">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-regular fa-user"></i></button>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </nav>
+      <div class="shopByCultureContainer">
+        <div class="shopByCulture commonNav"></div>
+        <div class="shopByEvent commonNav"></div>
+      </div>
+    </div>
+
+    <!-- body  -->
+    <div class="bodyContainer">
+      <video
+        src="./media/intro.mp4"
+        id="myVideo"
+        play
+        loop
+        muted
+        autoplay
+      ></video>
+      <div class="productWithReview">
+        <div class="productWithReviewChild1">
+          <h1>One of the absolute favorite kurta collections!</h1>
+          <p>
+            I love wearing kurtas, and this one gives me the perfect blend of
+            comfort and style all year long. I make sure to stock up on these in
+            different colors and patterns so I have one for every occasion! I
+            just can’t get enough!
+          </p>
+          <p>Prasad, Delhi</p>
+          <button>Shop The Collection!</button>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="bundle">
+        <div>
+          <img src="./media/brand.png" class="bundleImagesToHide" alt="" />
+        </div>
+        <div>
+          <span>Bundle Up !</span>
+          <span>
+            Create your perfect Ethnic Collection! Choose 3 of your favorite
+            styles – any combination – and save on beautiful Kurta tops, elegant
+            bottoms, and stylish dupattas. Easy and personalized, just like you!
+          </span>
+          <button>Build you bundle !</button>
+        </div>
+        <img src="./media/branch.png" class="bundleImagesToHide" alt="" />
+      </div>
+    </div>
+    <footer>
+      <div style="height: 100%">
+        <div class="footerSection1">
+          <div class="logoSection">
+            <img
+              src="../../productPage/Images/Logo.png"
+              alt=""
+              class="logoImage"
+            />
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <span>location</span>
+              <span>+91 892834712397</span>
+              <span>shop@heritagethreads.in</span>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <h2>Information</h2>
+              <li>Search</li>
+              <li>About</li>
+              <li>Terms & Services</li>
+              <li>Privacy Policy</li>
+              <li>Refund Policy</li>
+            </ul>
+            <ul>
+              <h2>Top Categories</h2>
+              <li>Punjabi</li>
+              <li>Gujarti</li>
+              <li>Maharastrian</li>
+              <li>Modernized Traditional</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            /* background-color: red; */
+          "
+        >
+          <div class="footerSection2">
+            <span
+              style="
+                text-transform: uppercase;
+                background-color: black;
+                border-radius: 25px;
+                color: white;
+                padding: 8px 12px;
+              "
+              >@2024 Heritage Theads All right Reserved</span
+            >
+            <span class="socialHandles">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    const swiperSlide = document.querySelectorAll(".swiper-slide");
+    swiperSlide.forEach((slide) => {
+      const div = document.createElement("div");
+      div.setAttribute("class", "productCard");
+      div.innerHTML = `
+        <img
+          src="https://cdn.shopify.com/s/files/1/0549/9555/0392/files/MTLK00080WHITE_1_360x.jpg?v=1715411825"
+          alt=""
+        />
+        <div class="productCard-info">
+          <h5>Heritage Threads</h5>
+          <h1>Regular Fit solid kurta</h1>
+          <h2>
+            <span>from</span>
+            <span >$74.89</span>
+          </h2>
+          <button>Add To Cart</button>
+        </div>`;
+      slide.appendChild(div);
+    });
+  </script>
+  <script src="../../Header/Header.js"></script>
+</html>

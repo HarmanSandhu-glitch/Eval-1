@@ -4,8 +4,7 @@ body {
 }
 footer {
   background-image: url(../Login/footer.webp);
-  background-size: auto 100%;
-  background-clip: content-box;
+  background-size: fill;
   color: black;
   display: flex;
   flex-direction: column;
@@ -16,9 +15,11 @@ footer {
   justify-content: start;
   align-items: center;
   height: fit-content;
+  margin-top: 4rem;
   z-index: 100;
 }
 footer > div {
+  padding-top: 6rem;
   backdrop-filter: blur(36px);
   display: flex;
   flex-direction: column;
@@ -39,6 +40,22 @@ footer > div {
 .links {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+  ul {
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    li {
+      list-style: none;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
 }
 .logoSection {
   display: flex;
@@ -58,19 +75,6 @@ footer > div {
   }
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-li {
-  list-style: none;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  /* font-weight: 400; */
-  font-weight: 900;
-}
 .logoImage {
   width: 6rem;
   border-radius: 100%;
