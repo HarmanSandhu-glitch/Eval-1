@@ -5,18 +5,17 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 nav {
-  background-image: url("./navBarBackground.avif");
   border-bottom: 1px solid black;
-  background-size: 100% 100%;
   position: sticky;
+  width: 100vw;
+  z-index: 50;
+  background-color: white;
 }
 .container {
   display: flex;
-  backdrop-filter: blur(36px);
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  /* background-color: rebeccapurple; */
+  width: 100vw;
 }
 .container > div {
   display: flex;
@@ -54,21 +53,26 @@ nav {
     color: white;
     padding: 16px 20px;
     font-size: 1rem;
+    cursor: pointer;
   }
 }
 
 .shopByCultureContainer {
-  background-image: url("./navBarBackground.avif");
   position: relative;
+  background-color: white;
 }
-.shopByCulture {
+.commonNav {
   backdrop-filter: blur(48px);
+  z-index: 99;
+  background-color: white;
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 12%);
   position: absolute;
   top: 0;
+  left: 0;
+  display: none;
   padding: 2.8rem 0;
   row-gap: 2rem;
   justify-content: center;
@@ -102,4 +106,38 @@ nav {
 }
 .shopByEvent {
   width: 100%;
+}
+
+@media screen and (max-width: 1486px) {
+  .commonNav {
+    grid-template-columns: repeat(6, 14%);
+  }
+}
+@media screen and (max-width: 1290px) {
+  .commonNav {
+    grid-template-columns: repeat(5, 16%);
+  }
+}
+@media screen and (max-width: 1152px) {
+  .commonNav {
+    grid-template-columns: repeat(4, 20%);
+  }
+}
+@media screen and (max-width: 854px) {
+  .commonNav {
+    grid-template-columns: repeat(3, 30%);
+  }
+  .right {
+    justify-content: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 0;
+    z-index: 5;
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .commonNav {
+    grid-template-columns: repeat(2, 40%);
+  }
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="../card/card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="bodyContainer">
+      <video
+        src="./media/intro.mp4"
+        id="myVideo"
+        play
+        loop
+        muted
+        autoplay
+      ></video>
+      <div class="productWithReview">
+        <div class="productWithReviewChild1">
+          <h1>One of the absolute favorite kurta collections!</h1>
+          <p>
+            I love wearing kurtas, and this one gives me the perfect blend of
+            comfort and style all year long. I make sure to stock up on these in
+            different colors and patterns so I have one for every occasion! I
+            just can’t get enough!
+          </p>
+          <p>Prasad, Delhi</p>
+          <button>Shop The Collection!</button>
+          <img
+            src="./media/patternBackbround.png"
+            alt=""
+            class="floralPattern"
+          />
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="bundle">
+        <div>
+          <img src="./media/brand.png" alt="" />
+        </div>
+        <div>
+          <span>Bundle Up !</span>
+          <span>
+            Create your perfect Ethnic Collection! Choose 3 of your favorite
+            styles – any combination – and save on beautiful Kurta tops, elegant
+            bottoms, and stylish dupattas. Easy and personalized, just like you!
+          </span>
+          <button>Build you bundle !</button>
+        </div>
+        <img src="./media/branch.png" alt="" />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      const swiperSlide = document.querySelectorAll(".swiper-slide");
+      swiperSlide.forEach((slide) => {
+        const div = document.createElement("div");
+        div.setAttribute("class", "productCard");
+        div.setAttribute("style", " display:flex;flex-direction:row;gap:6rem;");
+
+        div.innerHTML = `
+        <img
+          src="https://cdn.shopify.com/s/files/1/0549/9555/0392/files/MTLK00080WHITE_1_360x.jpg?v=1715411825"
+          alt=""
+          style="width:50%;"
+        />
+        <div class="productCard-info" style="display: flex;
+        justify-content: center;
+        align-items: start;scale:1.5;">
+          <h5 style="margin: 0">Heritage Threads</h5>
+          <h1>Regular Fit solid kurta</h1>
+          <h2>
+            <span style="font-size: 1rem; margin-right: 4 px">from</span>
+            <span style="color: #c33d3d; font-size: 116%">$74.89</span>
+          </h2>
+          <button>Add To Cart</button>
+        </div>`;
+        slide.appendChild(div);
+      });
+    </script>
+  </body>
+</html>
