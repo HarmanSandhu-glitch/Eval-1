@@ -8,7 +8,7 @@
   img {
     width: 100%;
     object-fit: cover;
-    border-radius: 0.8rem;
+    /* border-radius: 0.8rem; */
   }
   .cardTitle {
     font-size: 126%;

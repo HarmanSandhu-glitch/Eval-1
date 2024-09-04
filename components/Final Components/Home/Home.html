@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="Home.css" />
     <link rel="stylesheet" href="./Home2.css" />
     <link rel="stylesheet" href="../../card/card.css" />
     <link rel="stylesheet" href="../../Footer/Footer.css" />
-    <link rel="stylesheet" href="../../Header/Header.css" />
+    <link rel="stylesheet" href="./Header.css" />
 
     <link
       rel="stylesheet"
@@ -38,24 +38,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              nav: "#402536",
-              textColor: "#26262C",
-            },
-          },
-        },
-      };
-    </script>
   </head>
   <body style="padding-top: 102px; overflow-x: hidden">
     <!-- navbar -->
     <div>
       <nav>
-        <div class="container">
+        <div class="container" style="width: 100%; margin: auto">
           <div class="left">
             <ul>
               <li class="cultureShow"><i class="fa-solid fa-globe"></i></li>
@@ -73,11 +61,11 @@
             <button><i class="fa-solid fa-cart-shopping"></i></button>
           </div>
         </div>
+        <div class="shopByCultureContainer">
+          <div class="shopByCulture commonNav"></div>
+          <div class="shopByEvent commonNav"></div>
+        </div>
       </nav>
-      <div class="shopByCultureContainer">
-        <div class="shopByCulture commonNav"></div>
-        <div class="shopByEvent commonNav"></div>
-      </div>
     </div>
 
     <!-- body  -->
@@ -115,9 +103,7 @@
       <section class="swiperContainer">
         <div class="swiperHr"></div>
         <div class="swiperHeading">
-          <h1 class="swiperHeadingText" id="swiperMainHeading">
-            NEW ARRIVAL SHIRTS
-          </h1>
+          <h1 class="swiperHeadingText" id="swiperMainHeading">NEW ARRIVALS</h1>
           <h1 class="swiperHeadingText">
             Discover the latest styles and trends
           </h1>
@@ -127,9 +113,9 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/pants.jpg" />
+                  <img src="./images/sherwani1.webp" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
+                <div>Pearl-Adorned White Sherwani Set</div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -137,9 +123,9 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/pants2.jpg" />
+                  <img src="images/sherwani2.webp" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
+                <div>Ivory Poth Work Sherwani Set</div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -147,9 +133,9 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/pants3.jpg" />
+                  <img src="images/sherwani3.webp" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
+                <div>Pink Poth & Cutdana Sherwani Set</div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -157,9 +143,9 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/shirt3.png" alt="" />
+                  <img src="images/sherwani4.webp" alt="" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
+                <div>Ivory Geometric Sherwani Set</div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -167,9 +153,11 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/pants2.jpg" alt="" />
+                  <img src="images/jodhpuri.webp" alt="" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
+                <div style="text-transform: uppercase">
+                  Black & White Silk Jodhpuri
+                </div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -177,114 +165,11 @@
             <div class="swiper-slide">
               <div class="newContainer">
                 <div class="innerContainer">
-                  <img src="images/pants3.jpg" alt="" />
+                  <img src="images/kurta1.webp" alt="" />
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants4.jpg" alt="" />
+                <div style="text-transform: uppercase">
+                  Red Lucknowi Bandi Kurta Set
                 </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants5.jpg" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants.jpg" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants2.jpg" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants3.jpg" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/shirt3.png" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants2.jpg" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants3.jpg" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants4.jpg" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
-                <p>Product Description</p>
-                <p>Available Sizes : 38</p>
-              </div>
-            </div>
-            swiper
-            <div class="swiper-slide">
-              <div class="newContainer">
-                <div class="innerContainer">
-                  <img src="images/pants5.jpg" alt="" />
-                </div>
-                <div>WHITE SUBTLE SHEEN SUIT</div>
                 <p>Product Description</p>
                 <p>Available Sizes : 38</p>
               </div>
@@ -296,7 +181,6 @@
             <span>VIEW ALL</span>
           </button>
         </div>
-        <!-- <div class="swiperHr" style="margin-top: 40px;"></div> -->
       </section>
       <section
         class="imageSection"
@@ -390,8 +274,7 @@
           <div class="grid-item">
             <img src="images/9.webp" class="gridImage" alt="" />
             <div class="btnContainer">
-              <h1 class="gridImageHeading">Sherwanis
-              </h1>
+              <h1 class="gridImageHeading">Sherwanis</h1>
               <button class="btn btn-3 hover-slide-right">
                 <span>VIEW MORE</span>
               </button>
@@ -459,7 +342,7 @@
       </section>
       <div class="bundle">
         <div>
-          <img src="./media/brand.png" class="bundleImagesToHide" alt="" />
+          <img src="./media/brand.png" class="bundleImagesToHide" alt="" style="filter: saturate(0.6)"/>
         </div>
         <div>
           <span>Bundle Up !</span>
@@ -470,7 +353,7 @@
           </span>
           <button>Build you bundle !</button>
         </div>
-        <img src="./media/branch.png" class="bundleImagesToHide" alt="" />
+        <img src="./media/branch.png" class="bundleImagesToHide" alt="" style="filter: grayscale(1); "/>
       </div>
       <section
         class="collectionSection"
@@ -494,7 +377,7 @@
           </h1>
           <h1 class="swiperHeadingText">Our Finest and Greatest Collection</h1>
         </div>
-        <div class="collectionContainer" style="margin: 50px 50px"></div>
+        <div class="collectionContainer" style="margin: 24px 48px"></div>
       </section>
     </div>
     <footer>
@@ -589,7 +472,7 @@
           <h1>Regular Fit solid kurta</h1>
           <h2>
             <span>from</span>
-            <span >$74.89</span>
+            <span >Rs . ${Math.floor(Math.random() * 1000 + 500)}</span>
           </h2>
           <button>Add To Cart</button>
         </div>`;
@@ -613,7 +496,15 @@
         },
       },
     });
+
+    const newCollectionHeading = document.querySelectorAll(
+      ".mySwiper .swiper-wrapper .swiper-slide .newContainer div:nth-child(2)"
+    );
+    newCollectionHeading.forEach((item) => {
+      item.style.textTransform = "upperCase";
+    });
   </script>
   <script src="../../Header/Header.js"></script>
   <script src="./Home.js"></script>
+  <script src="./Home2.js"></script>
 </html>

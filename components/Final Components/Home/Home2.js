@@ -31,5 +31,4 @@ collection1.map((item) => {
             </div>
         `;
   collectionContainer.appendChild(div);
-  console.log(item.img);
 });
